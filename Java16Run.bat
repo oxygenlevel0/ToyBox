@@ -1,18 +1,18 @@
-:: ‚±‚Ìƒtƒ@ƒCƒ‹‚ÍShift_JIS‚ÅƒGƒ“ƒR[ƒh‚µ‚Ä‚­‚¾‚³‚¢
+:: ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯Shift_JISã§ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„
 @echo off
 title minecraft_forge_server
 
-:: ƒL[“ü—Í‚Å•ªŠò
-:: Y,NˆÈŠO‚ÌƒL[“ü—Í‚Í–³Ž‹‚³‚ê‚é
-choice /c YN /n /t int /d N /m "ƒT[ƒo[ŠJŽn‚µ‚Ü‚·‚©? [Y,N]"
+:: ã‚­ãƒ¼å…¥åŠ›ã§åˆ†å²
+:: Y,Nä»¥å¤–ã®ã‚­ãƒ¼å…¥åŠ›ã¯ç„¡è¦–ã•ã‚Œã‚‹
+choice /c YN /n /t int /d N /m "ã‚µãƒ¼ãƒãƒ¼é–‹å§‹ã—ã¾ã™ã‹? [Y,N]"
     if /i %errorlevel% == 1 goto Select_Y
     if /i %errorlevel% == 2 goto Select_N
 
 :Select_Y
     cls
-    :: 1.JavaŒÄ‚Ño‚µ
-        :: 2.JVMˆø”ŒÄ‚Ño‚µ
-        :: 3.forgeƒT[ƒo[ŽÀs
+    :: 1.Javaå‘¼ã³å‡ºã—
+        :: 2.JVMå¼•æ•°å‘¼ã³å‡ºã—
+        :: 3.forgeã‚µãƒ¼ãƒãƒ¼å®Ÿè¡Œ
     "C:\Program Files\Java\jdk-version\bin\java.exe"^
         @user_jvm_args.txt^
         @libraries/net/minecraftforge/forge/version/win_args.txt^
@@ -21,9 +21,9 @@ choice /c YN /n /t int /d N /m "ƒT[ƒo[ŠJŽn‚µ‚Ü‚·‚©? [Y,N]"
 
 :Select_N
     cls
-    :: 3•bƒJƒEƒ“ƒgƒ_ƒEƒ“
+    :: 3ç§’ã‚«ã‚¦ãƒ³ãƒˆãƒ€ã‚¦ãƒ³
     for /l %%a in (3,-1,1) do (
-        echo %%a•bŒã‚ÉI—¹‚µ‚Ü‚·B¡‚Ü‚Å‚ ‚è‚ª‚Æ‚¤cc
+        echo %%aç§’å¾Œã«çµ‚äº†ã—ã¾ã™ã€‚ä»Šã¾ã§ã‚ã‚ŠãŒã¨ã†â€¦â€¦
         timeout /t 1 /nobreak >nul
         cls
     )
