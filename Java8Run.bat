@@ -12,8 +12,8 @@ choice /c YN /n /t int /d N /m "サーバー開始しますか? [Y,N]"
     cls
     :: 1.Java呼び出し
     :: 2.forgeサーバー実行
-    "C:\Program Files\Java\jreVersion\bin\java" ^
-    -XmxintG -server -jar minecraft_server.version.jar nogui
+    "C:\Program Files\Java\jreVersion\bin\java"^
+        -XmxintG -server -jar minecraft_server.version.jar nogui
     goto Select_N
 
 :Select_N
