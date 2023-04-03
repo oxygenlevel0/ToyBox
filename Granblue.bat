@@ -1,11 +1,12 @@
 @echo off
 
 start chrome_proxy.exe^
-    --user-data-dir=C:\Users\ryuji\guraburu^
-    --profile-directory="Profile 1"^
-    --window-size=336,632^
-    --window-position=1580,408^
+    --user-data-dir=C:\Users\hoge\hoge^
+    --profile-directory="Profile hoge"^
+    --window-size=hoge,hoge^
+    --window-position=hoge,hoge^
     --app="https://game.granbluefantasy.jp/#mypage"
 
+:: pause.exe使用
 timeout /t 1 /nobreak >nul
 sendkeys /active [Ctrl]p
