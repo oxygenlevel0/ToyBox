@@ -4,8 +4,8 @@ title minecraft_forge_server
 :: キー入力で分岐
 :: Y,N以外のキー入力は無視される
 choice /c YN /n /t 5 /d N /m "サーバー開始しますか? [Y,N]"
-    if /i %errorlevel% == 1 goto Select_Y
-    if /i %errorlevel% == 2 goto Select_N
+    if /i %errorlevel%==1 goto Select_Y
+    if /i %errorlevel%==2 goto Select_N
 
 :Select_Y
     cls
