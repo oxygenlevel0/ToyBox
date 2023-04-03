@@ -1,8 +1,8 @@
 @echo off
 
 :: コマンドプロンプトを最小化して起動する
-if not "%Gran%"=="Djeeta" (
-    set Gran=Djeeta
+if not "%Gran%" == "Djeeta" (
+    set Gran = Djeeta
     start /min cmd /c,"%~0" %*
     exit
 )
