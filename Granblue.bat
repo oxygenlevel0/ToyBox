@@ -7,6 +7,7 @@ if not "%Gran%"=="Djeeta" (
     exit
 )
 
+:: Chromeを起動(2行目からはオプション)
 start chrome_proxy.exe^
     --user-data-dir = C:\Users\hoge\hoge^
     --profile-directory = "Profile hoge"^
@@ -15,5 +16,6 @@ start chrome_proxy.exe^
     --app = "https://game.granbluefantasy.jp/#mypage"
 
 timeout /t 1 /nobreak >nul
-sendkeys /active [Ctrl]p
+:: SendKeysでPause.exeのショートカットを送信
+sendkeys /active pause
 exit
