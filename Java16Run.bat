@@ -4,7 +4,7 @@ title minecraft_forge_server
 
 :: キー入力で分岐
 :: Y,N以外のキー入力は無視される
-choice /c YN /n /t int /d N /m "サーバー開始しますか? [Y,N]"
+choice /c YN /n /t 5 /d N /m "サーバー開始しますか? [Y,N]"
     if /i %errorlevel% == 1 goto Select_Y
     if /i %errorlevel% == 2 goto Select_N
 
@@ -13,9 +13,9 @@ choice /c YN /n /t int /d N /m "サーバー開始しますか? [Y,N]"
     :: 1.Java呼び出し
         :: 2.JVM引数呼び出し
         :: 3.forgeサーバー実行
-    "C:\Program Files\Java\jdk-version\bin\java.exe"^
+    "C:\Program Files\Java\jdk-hoge\bin\java.exe"^
         @user_jvm_args.txt^
-        @libraries/net/minecraftforge/forge/version/win_args.txt^
+        @libraries/net/minecraftforge/forge/hoge/win_args.txt^
         nogui %*
     goto Select_N
 
