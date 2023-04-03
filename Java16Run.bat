@@ -1,4 +1,3 @@
-:: このファイルはShift_JISでエンコードしてください
 @echo off
 title minecraft_forge_server
 
