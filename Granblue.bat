@@ -15,3 +15,4 @@ start chrome_proxy.exe^
 
 timeout /t 1 /nobreak >nul
 sendkeys /active [Ctrl]p
+exit
