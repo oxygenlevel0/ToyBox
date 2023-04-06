@@ -23,4 +23,5 @@ choice /c YN /n /t 5 /d N /m "サーバー開始しますか? [Y,N]"
         timeout /t 1 /nobreak >nul
         cls
     )
+    
     exit
